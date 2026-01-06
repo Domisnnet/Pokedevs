@@ -144,20 +144,66 @@ document.querySelectorAll(".pokedev").forEach(pokedev => {
 });
 
 /* =========================
-  Easter Egg
+   Lógica do Easter Egg
 ========================= */
+const somMoeda = document.getElementById("som-moeda");
+let clickCount = 0;
+let clickTimer;
+
+// Selecionamos o container dos cartões para capturar o clique no número (#001, etc)
 pokedevsCardsContainer.addEventListener("click", (event) => {
+  // Verifica se clicou no SPAN (número do pokedev) dentro da classe detalhes
   if (event.target.tagName === "SPAN" && event.target.parentElement.classList.contains("detalhes")) {
+
+    clickCount++;
+    clearTimeout(clickTimer);
+
     const cardAtivo = document.querySelector(".cartao-pokedev.aberto");
-    cardAtivo.classList.add("pula-pirueta");
-    if (somSelecao) {
-      somSelecao.currentTime = 0;
-      somSelecao.play().catch(() => { });
-    }
-    setTimeout(() => {
-      cardAtivo.classList.remove("pula-pirueta");
-      void cardAtivo.offsetWidth;               
+
+    if (clickCount === 7) {
+      // SUCESSO: SOM DO MARIO
+      if (somMoeda) {
+        somMoeda.currentTime = 0;
+        somMoeda.play().catch(() => { });
+      }
+
+      // Efeito visual de Pirueta Dupla
       cardAtivo.classList.add("pula-pirueta");
+
+      // Reset do estado
+      clickCount = 0;
+      somSelecao.playbackRate = 1.0;
+
+      setTimeout(() => {
+        cardAtivo.classList.remove("pula-pirueta");
+      }, 800);
+
+    } else {
+      // CLIQUE DURANTE O COMBO
+      if (somSelecao) {
+        somSelecao.currentTime = 0;
+
+        // A partir do 4º clique, o tom sobe 
+        if (clickCount >= 4) {
+          somSelecao.playbackRate = 1 + (clickCount - 3) * 0.3;
+          event.target.style.color = "#ffffff";
+          event.target.style.textShadow = "0 0 10px #ffffff";
+        }else {
+          somSelecao.playbackRate = 1.0;
+        }
+
+        somSelecao.play().catch(() => { });
+      }
+
+      // Pequeno feedback visual de "balanço" no número para indicar o combo
+      event.target.style.transform = `scale(${1 + clickCount * 0.1})`;
+      setTimeout(() => event.target.style.transform = "scale(1)", 100);
+    }
+
+    // Se ficar 800ms sem clicar, o combo quebra e o som volta ao normal
+    clickTimer = setTimeout(() => {
+      clickCount = 0;
+      if (somSelecao) somSelecao.playbackRate = 1.0;
     }, 800);
   }
 });

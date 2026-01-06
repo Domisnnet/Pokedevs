@@ -135,13 +135,18 @@ main {
     align-items: center;
 }
 
-.cartao-pokedev .detalhes span { /* easter egg */
-    cursor: help;
-    transition: transform 0.2s;
+.cartao-pokedev .detalhes span {  /* Easter Egg */
+    display: inline-block; 
+    transition: transform 0.1s ease, color 0.1s ease;
+    user-select: none; 
+    cursor: help; 
 }
 
 .cartao-pokedev .detalhes span:hover {
     transform: scale(1.2);
+    color: #fff; 
+    text-shadow: 0 0 5px #fff, 0 0 10px #fcc719, 0 0 15px #fcc719;
+    -webkit-text-stroke: 0.5px rgba(0,0,0,0.5);
 }
 
 .cartao-pokedev .tipo {
