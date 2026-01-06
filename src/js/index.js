@@ -51,8 +51,18 @@ const pokedevs = [
 
 const pokedevsListContainer = document.querySelector(".listagem ul");
 const pokedevsCardsContainer = document.querySelector(".cartoes-pokedev");
+const somSelecao = document.getElementById("som-selecao");
+const themeMeta = document.getElementById("nav-theme");
 
-// 1. OTIMIZAÇÃO DE PERFORMANCE: Acumular o HTML antes de injetar
+const coresHex = {
+  eletrico: "#fcc719",
+  fogo: "#f15000",
+  agua: "#015C98",
+  grama: "#49D0B0",
+  trevas: "#BA68C8",
+  fada: "#C29791"
+};
+
 let allCardsHtml = "";
 let allListHtml = "";
 
@@ -80,29 +90,34 @@ pokedevs.forEach((pokedev, index) => {
     </article>`;
 
   allListHtml += `
-    <li class="pokedev ${isFirst ? 'ativo' : ''}" id="${pokedev.id}" data-target="cartao-${pokedev.id}" role="tab">
+    <li class="pokedev ${isFirst ? 'ativo' : ''}" id="${pokedev.id}" role="tab">
       <img src="${pokedev.imagem}" alt="Ícone ${pokedev.nome}" loading="lazy"/>
       <span>${pokedev.nome}</span>
     </li>`;
 });
 
-// Injeta no DOM apenas uma vez (Reflow único)
 pokedevsCardsContainer.innerHTML = allCardsHtml;
 pokedevsListContainer.innerHTML = allListHtml;
 
-// 2. LÓGICA DE INTERAÇÃO 
-const listaSelecaoPokedevs = document.querySelectorAll(".pokedev");
-
 const alternarEstadoAtivo = (idSelecionado) => {
-  // Remove classes atuais
+  const pokedevData = pokedevs.find(p => p.id === idSelecionado);
+  const corBase = coresHex[pokedevData.tipo] || "#6b727a";
+
+  if (somSelecao) {
+    somSelecao.currentTime = 0;
+    somSelecao.play().catch(() => {});
+  }
+
   document.querySelector(".pokedev.ativo")?.classList.remove("ativo");
   document.querySelector(".cartao-pokedev.aberto")?.classList.remove("aberto");
 
-  // Adiciona novas classes
   document.getElementById(idSelecionado).classList.add("ativo");
   document.getElementById(`cartao-${idSelecionado}`).classList.add("aberto");
+
+  if (themeMeta) themeMeta.setAttribute("content", corBase);
+  document.documentElement.style.setProperty('--bg-global', corBase + "44");
 };
 
-listaSelecaoPokedevs.forEach(pokedev => {
+document.querySelectorAll(".pokedev").forEach(pokedev => {
   pokedev.addEventListener("click", () => alternarEstadoAtivo(pokedev.id));
 });

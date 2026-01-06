@@ -4,22 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pokedevs</title>
+    <meta name="theme-color" id="nav-theme" content="#6b727a">
     <link rel="stylesheet" href="src/fonts/fonts.css" />
     <link rel="stylesheet" href="src/css/estilos-globais.css" />
   </head>
   <body>
     <main>
       <div class="pokedevs">
-        <div class="cartoes-pokedev" role="list">
-          <!-- Cards serão gerados dinamicamente pelo JS -->
-        </div>
+        <div class="cartoes-pokedev" role="list"></div>
         <nav class="listagem" aria-label="Navegação entre Pokedevs">
-          <ul role="tablist">
-            <!-- Itens da lista serão gerados dinamicamente pelo JS -->
-          </ul>
+          <ul role="tablist"></ul>
         </nav>
       </div>
     </main>
+    <audio id="som-selecao" src="src/media/sounds/ding-sound.mp3" preload="auto"></audio>
     <script src="src/js/index.js"></script>
   </body>
 </html>

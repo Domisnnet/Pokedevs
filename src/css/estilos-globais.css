@@ -11,6 +11,7 @@
     --color-default: rgba(107, 114, 122, 0.6); 
     --color-active: #fa6668;
     --type-color: var(--color-default);
+    --bg-global: rgba(0, 0, 0, 0.1); 
 }
 
 /* =========================
@@ -36,7 +37,9 @@ body::before {
     position: fixed;
     inset: 0;
     z-index: -2;
+    background-color: var(--bg-global); 
     backdrop-filter: blur(7px);
+    transition: background-color 0.6s ease;
 }
 
 main {
@@ -57,6 +60,14 @@ main {
 .tipo-fada     { --type-color: var(--color-fada); }
 
 /* =========================
+   Animação de Entrada Cartão
+========================= */ 
+@keyframes entrarCartao {
+    from { opacity: 0; transform: translateX(-30px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+/* =========================
    Componente Cartão
 ========================= */ 
 .pokedevs {
@@ -71,12 +82,14 @@ main {
     box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.9);
     background-color: var(--type-color);
     backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
     border-top-left-radius: 30px;
     border-bottom-right-radius: 30px;
 }
 
-.cartao-pokedev.aberto { display: block; }
+.cartao-pokedev.aberto { 
+    display: block; 
+    animation: entrarCartao 0.4s ease-out forwards;
+}
 
 .cartao-pokedev img {
     width: 100%;
