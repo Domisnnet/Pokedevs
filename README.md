@@ -1,137 +1,138 @@
+<h2 id="sobre-o-projeto">1. 🚀 Pokedevs - Arquétipos de Devs 🚀</h2>
 
-# Pokedevs -  🚀 🚀
+![Status do Deploy](https://img.shields.io/badge/Status-Online-brightgreen)
+![Tecnologias](https://img.shields.io/badge/Tecnologias-HTML5%20%7C%20CSS3%20%7C%20JS-blue)
+[![Licença MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/Domisnnet/pokedevs/blob/main/LICENSE)
 
-![Pokedevs](src/imagens/iMac-24-1120x630.png)
+![Pokedevs](src/imagens/pokedev.png)
 
-Bem-vindo ao projeto Pokedevs! Este é um projeto divertido e interativo que apresenta uma série de personagens inspirados em Pokémon, cada um representando um arquétipo de desenvolvedor. O projeto foi desenvolvido para a "Semana do Zero ao Programador Contratado" com o objetivo de praticar habilidades de front-end.
-
-## Sobre o Projeto 💡
-
-Pokedevs é uma aplicação web que exibe cartões de personagens, cada um representando um tipo diferente de desenvolvedor, com características e descrições únicas. O objetivo é criar uma experiência divertida e educativa que demonstre o uso de HTML, CSS e JavaScript para criar interfaces dinâmicas.
-
-O projeto apresenta:
-
-*   **Cartões Interativos:** Cartões com informações detalhadas sobre cada "Pokedev".
-*   **Navegação por Lista:** Uma lista interativa de "Pokedevs" que permite alternar entre os cartões.
-*   **Layout Responsivo:** Uma interface que se adapta a diferentes tamanhos de tela, desde desktops até dispositivos móveis.
-*   **Animações e Efeitos:** Utilização de animações para realçar a interatividade da página.
-
-## Funcionalidades 🛠️
-
-O projeto Pokedevs implementa as seguintes funcionalidades principais:
-
-1.  **Exibição de Cartões:**
-    *   Cada cartão exibe um "Pokedev" com seu nome, número, tipo, imagem e descrição.
-    *   Os cartões têm um design visualmente atraente, com cores e elementos que refletem seus tipos.
-2.  **Navegação por Lista:**
-    *   Uma lista lateral com miniaturas dos "Pokedevs".
-    *   Ao clicar em um item da lista, o cartão correspondente é exibido.
-    *   O item ativo na lista é destacado visualmente.
-3.  **Responsividade:**
-    *   O layout se adapta a diferentes tamanhos de tela, proporcionando uma boa experiência em diversos dispositivos.
-    *   Ajuste de layout e tamanho de elementos para melhor visualização em telas menores.
-4.  **Interatividade:**
-    *   Utilização de JavaScript para controlar a exibição dos cartões e o destaque do item ativo na lista.
-    *   Transições suaves entre os cartões.
-
-## Tecnologias Utilizadas ⚙️
-
-Este projeto foi desenvolvido usando:
-
-*   **HTML5:** Para a estrutura do site e conteúdo.
-*   **CSS3:** Para o estilo, design, responsividade e animações.
-*   **JavaScript:** Para a interatividade da lista e exibição dos cartões.
-*   **Google Fonts:** Para a tipografia.
-
-## Como Usar 🚀
-
-Clique no botão abaixo para acessar:
-
-<a href="https://domisnnet.github.io/pokedevs/" target="_blank" rel="noopener noreferrer">
-   <img src="src/imagens/botão.webp" width="35px" height="35px" alt="Acessar">
-</a>
+Bem-vindo ao **Pokedevs**! Um projeto interativo que transforma arquétipos de desenvolvedores em personagens inspirados no universo Pokémon. Desenvolvido durante a "Semana do Zero ao Programador Contratado", este projeto foca em lógica de programação e manipulação de DOM para criar uma experiência imersiva.
 
 ---
 
-## Código Fonte 💻
+## 📚 Tabela de Conteúdo
 
-Para explorar o código-fonte e contribuir com o projeto, acesse:
-
-[Repositório do Pokedevs](https://github.com/Domisnnet/pokedevs)
-
-## Créditos 📝
-
-*   **Desenvolvedor:** <strong>DomisDev.</strong>
-*   **Design:** Inspirado em Pokémon e desenvolvido para a "Semana do Zero ao Programador Contratado".
-*   **Fontes:** Google Fonts.
-
-## 📝 Licença:
-
-Este projeto está licenciado sob a [MIT License](LICENSE).
+| 🎮 O Projeto | 🛠️ Técnico | 🤝 Comunidade |
+| :---: | :---: | :---: |
+| [![1. Sobre](https://img.shields.io/badge/1%20-%20Sobre-4CAF50)](#sobre-o-projeto) | [![5. Destaques](https://img.shields.io/badge/5%20-%20Destaques-607D8B)](#destaques-tecnicos) | [![9. Código](https://img.shields.io/badge/9%20-%20Código-795548)](#codigo-fonte) |
+| [![2. Techs](https://img.shields.io/badge/2%20-%20Techs-2196F3)](#tecnologias-utilizadas) | [![6. Repositório](https://img.shields.io/badge/6%20-%20Repo-009688)](#codigo-fonte) | [![10. Créditos](https://img.shields.io/badge/10%20-%20Créditos-607D8B)](#créditos) |
+| [![3. Acessar](https://img.shields.io/badge/3%20-%20Acessar-FF9800)](#como-acessar) | [![7. Contribuir](https://img.shields.io/badge/7%20-%20Contribuir-3F51B5)](#como-contribuir) | [![11. Licença](https://img.shields.io/badge/11%20-%20Licença-E91E63)](#licenca) |
+| [![4. Funções](https://img.shields.io/badge/4%20-%20Funções-9C27B0)](#funcionalidades) | [![8. FAQ](https://img.shields.io/badge/8%20-%20FAQ-FFC107)](#faq) | [![12. Perfil](https://img.shields.io/badge/12%20-%20Perfil-212121)](#perfil-do-github) |
 
 ---
 
-## Contribuindo 🤝
+<h2 id="tecnologias-utilizadas">2. ⚙️ Tecnologias Utilizadas</h2>
 
-Contribuições são sempre bem-vindas! Se você deseja contribuir com este projeto, siga estes passos:
-
-1.  **Branch:** Crie uma branch para suas mudanças. Use nomes descritivos para indicar o tipo de contribuição, como `feat/nova-funcionalidade`, `fix/correcao-de-bug` ou `docs/melhoria-na-documentacao`.
-
-    ```bash
-    git checkout -b feat/nova-funcionalidade
-    ```
-
-    *   `git checkout`: Este comando cria e muda para uma nova branch.
-    *   `-b`:  Opção que indica a criação de uma nova branch.
-    *   `feat/nova-funcionalidade`:  Um exemplo de nome para a sua branch.  Escolha um nome que descreva a mudança que você está fazendo.  Se você estiver corrigindo um bug, use `fix/`.  Se você estiver adicionando documentação, use `docs/`.
-
-    [Documentação `git checkout`](https://git-scm.com/docs/git-checkout)
-
-2.  **Commit:** Faça commits com mensagens claras e concisas que expliquem o propósito da sua alteração. Use o imperativo (e.g., "Adiciona funcionalidade X", "Corrige bug Y").
-
-    ```bash
-    git commit -m 'Adiciona funcionalidade de busca por tipo de Pokémon'
-    ```
-
-    *   `git commit`: Este comando salva suas alterações localmente.
-    *   `-m`:  Opção para adicionar uma mensagem ao commit.
-    *   `'Adiciona funcionalidade de busca por tipo de Pokémon'`:  Um exemplo de mensagem de commit.  Seja específico e explique o que você mudou e por que.
-
-    [Documentação `git commit`](https://git-scm.com/docs/git-commit)
-
-3.  **Push:** Envie suas alterações para o seu fork.
-
-    ```bash
-    git push origin feat/nova-funcionalidade
-    ```
-
-    *   `git push`: Este comando envia seus commits para o seu repositório remoto (seu fork no GitHub).
-    *   `origin`:  Um atalho para o seu repositório remoto.
-    *   `feat/nova-funcionalidade`:  O nome da branch que você está enviando.
-
-    [Documentação `git push`](https://git-scm.com/docs/git-push)
-    
----
-
-## FAQ 🤔
-
-**Pergunta 1:** Como faço para ver os outros "Pokedevs"?
-
-   **Resposta:** Use a lista lateral de "Pokedevs". Ao clicar em um nome, o cartão correspondente será exibido.
-
-**Pergunta 2:** Posso usar este projeto como base para meus projetos?
-
-   **Resposta:** Sim, o código está disponível no GitHub e você pode usá-lo como base para seus projetos, lembrando de dar os créditos apropriados.
-
-**Pergunta 3:** Como posso entrar em contato com o desenvolvedor?
-
-   **Resposta:** Você pode entrar em contato através do perfil do GitHub: 
-
-<a href="https://github.com/Domisnnet">
-    <img src="src/imagens/DomisDev.png" width="60px" height="60px" alt="Acessar perfil GitHub">
-    DomisDev
-</a> 
+| Camada | Tecnologias | Descrição |
+| :--- | :--- | :--- |
+| **Frontend** | ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white) | Estrutura semântica e estilização de cartões. |
+| **Interatividade** | ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black) | Manipulação de eventos e troca dinâmica de estados. |
+| **Tipografia** | ![Google Fonts](https://img.shields.io/badge/Google_Fonts-4285F4?style=flat-square&logo=google&logoColor=white) | Fontes personalizadas para imersão no tema. |
 
 ---
 
-Aproveite a experiência interativa com Pokedevs! 🚀
+<h2 id="como-acessar">3. 🚀 Como Acessar</h2>
+
+Clique no botão abaixo para capturar todos os Pokedevs diretamente no seu navegador:
+
+<div align="left">
+  <a href="https://domisnnet.github.io/pokedevs/" target="_blank">
+    <img alt="Botão Acessar" src="src/imagens/botão.webp" height="70" width="70" />
+  </a>
+</div>
+
+---
+
+<h2 id="funcionalidades">4. 🧩 Funcionalidades Principais</h2>
+
+O projeto combina gamificação com fundamentos de desenvolvimento web:
+
+| Funcionalidade | Descrição |
+| :--- | :--- |
+| 🃏 **Cards Dinâmicos** | Exibição de informações detalhadas (nome, número, descrição) de cada arquétipo. |
+| 🖱️ **Navegação Smart** | Seleção lateral intuitiva que atualiza o conteúdo principal sem recarregar a página. |
+| 📱 **Design Adaptável** | Interface otimizada para diferentes resoluções, garantindo leitura em qualquer dispositivo. |
+| ✨ **Efeitos Visuais** | Transições e animações em CSS para simular a troca de "pokémons". |
+
+---
+
+<h2 id="destaques-tecnicos">5. 💻 Destaques Técnicos</h2>
+
+Nesta seção, destaco os conceitos de engenharia aplicados no projeto:
+
+### ⚡ Manipulação de DOM
+Utilização de `querySelectorAll` e `addEventListener` para gerenciar a lista de personagens, permitindo uma interface reativa e fluida.
+
+### 🎨 CSS Modular
+Organização de estilos focada em classes reutilizáveis para os cartões, facilitando a manutenção e a adição de novos personagens.
+
+---
+
+<h2 id="como-contribuir">7. 🤝 Como Contribuir</h2>
+
+Deseja adicionar um novo Pokedev? Siga o fluxo abaixo:
+
+| Fase | Ação | Link / Comando |
+| :---: | :--- | :--- |
+| **01** | **Fork** | [![Fork](https://img.shields.io/badge/-Fazer%20Fork-blue?style=flat-square&logo=github)](https://github.com/Domisnnet/pokedevs/fork) |
+| **02** | **Branch** | `git checkout -b feat/novo-pokedev` |
+| **03** | **Commit** | `git commit -m 'feat: adiciona pokedev de backend'` |
+| **04** | **Push** | `git push origin feat/novo-pokedev` |
+| **05** | **PR** | [![Abrir PR](https://img.shields.io/badge/-Abrir%20PR-green?style=flat-square&logo=git)](https://github.com/Domisnnet/pokedevs/compare) |
+
+---
+
+<h2 id="faq">8. 🧠 Perguntas Frequentes</h2>
+
+<details>
+<summary><strong>Como vejo outros Pokedevs ❓</strong></summary>
+<p>🖱️ <strong>Resposta:</strong> Basta utilizar a lista lateral. Cada item representa um desenvolvedor; ao clicar, o cartão central se transforma instantaneamente.</p>
+</details>
+
+<details>
+<summary><strong>Posso usar este código em meus estudos ❓</strong></summary>
+<p>🤝 <strong>Resposta:</strong> Com certeza! O projeto é <strong>Open Source</strong> sob a licença MIT. Sinta-se à vontade para clonar e estudar a lógica de troca de classes do JavaScript.</p>
+</details>
+
+<details>
+<summary><strong>O projeto é responsivo ❓</strong></summary>
+<p>📱 <strong>Resposta:</strong> Sim. Foram aplicadas Media Queries para que a lista de seleção e os cartões se ajustem perfeitamente em telas de smartphones e tablets.</p>
+</details>
+
+<details>
+<summary><strong>Como entro em contato com o desenvolvedor ❓</strong></summary>
+<p>📩 <strong>Resposta:</strong> Você pode abrir uma Issue ou acessar meu perfil através do link no rodapé deste README.</p>
+</details>
+
+---
+
+<h2 id="codigo-fonte">9. 💻 Código Fonte</h2>
+
+Explore a estrutura das pastas e os arquivos de lógica aqui:
+
+[![Repositório](https://img.shields.io/badge/Repositório-Domisnnet%2Fpokedevs-blue?style=for-the-badge&logo=github)](https://github.com/Domisnnet/Pokedevs)
+
+---
+
+<h2 id="créditos">10. 📝 Créditos & Reconhecimentos</h2>
+
+O **Pokedevs** foi construído com foco em aprendizado prático:
+
+| Atribuição | Responsável / Recurso | Descrição |
+| :--- | :--- | :--- |
+| **Arquitetura & Dev** | **DomisDev** | Desenvolvimento da lógica e estilização. |
+| **Inspiração** | **Pokémon / Nintendo** | Base visual e temática do projeto. |
+| **Treinamento** | **Semana Dev Contratado** | Evento base para a criação do projeto. |
+| **Tipografia** | **Google Fonts** | Fornecimento das fontes digitais. |
+
+---
+
+<h2 id="licenca">11. 📄 Licença</h2>
+
+Este projeto está licenciado sob a [![Licença MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/Domisnnet/Pokedevs/blob/main/LICENSE)
+
+---
+
+<h2 id="perfil-do-github">12. 👨‍💻 Perfil do GitHub</h2>
+
+<a href="https://github.com/Domisnnet"> <img src="src/imagens/DomisDev.png" width="120" alt="Acessar perfil GitHub"> </a>
