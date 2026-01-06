@@ -33,13 +33,13 @@ Bem-vindo ao **Pokedevs**! Um projeto interativo que transforma arquétipos de d
 
 <h2 id="como-acessar">3. 🚀 Como Acessar</h2>
 
-Clique no botão abaixo para capturar todos os Pokedevs diretamente no seu navegador:
+O projeto pode ser acessado através dos seguintes links:
 
-<div align="left">
-  <a href="https://domisnnet.github.io/Pokedevs/" target="_blank">
-    <img alt="Botão Acessar" src="src/imagens/botão.webp" height="70" width="70" />
-  </a>
-</div>
+| Ambiente | Link de Acesso | Descrição |
+| :--- | :---: | :--- |
+| **GitHub Pages** | <a href="https://domisnnet.github.io/Pokedevs/" target="_blank"><img alt="Acessar GitHub Pages" src="src/imagens/botão.webp" height="70" width="70" /></a> | **Versão Principal.** Hospedado diretamente do código na branch `main`. |
+| **Firebase Hosting** | <a href="https://pokedevs-01319317-5da45.web.app" target="_blank"><img alt="Acessar Firebase" src="https://img.shields.io/badge/Firebase-LIVE-FFCA28?style=for-the-badge&logo=firebase"></a> | **Ambiente de Deploy.** Hospedado a partir do build gerado na pasta `public`. |
+
 
 ---
 
