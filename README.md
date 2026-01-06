@@ -68,6 +68,17 @@ Organização de estilos focada em classes reutilizáveis para os cartões, faci
 
 ---
 
+<h2 id="repositorio">6. 📂 Repositório</h2>
+
+O projeto completo, incluindo assets e arquivos de configuração, está disponível para consulta pública. Você pode clonar o projeto localmente para estudo:
+
+```bash
+# Clone este repositório
+$ git clone [https://github.com/Domisnnet/Finans.git](https://github.com/Domisnnet/Pokedevs.git)
+```
+
+---
+
 <h2 id="como-contribuir">7. 🤝 Como Contribuir</h2>
 
 Deseja adicionar um novo Pokedev? Siga o fluxo abaixo:
