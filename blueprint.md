@@ -61,6 +61,9 @@ Utilização de `querySelectorAll` para criar uma lista de todos os personagens 
 ### 🎨 CSS Modular
 Organização de estilos focada em classes reutilizáveis. Cada cartão possui um estado base, e classes modificadoras (`.aberto`) controlam sua visibilidade.
 
+### 🥚 Easter Egg
+Foi implementado um Easter Egg que é ativado ao clicar 7 vezes seguidas no número do Pokedev. A cada clique, o som de seleção é reproduzido com um tom crescente e, no sétimo clique, um som de moeda do Mario é tocado e o card do Pokedev realiza uma animação de pirueta. A lógica se encontra no final do arquivo `src/js/index.js` e a animação no `src/css/estilos-globais.css`.
+
 ---
 
 ## 5. Como Contribuir
@@ -137,3 +140,17 @@ Para adicionar um novo personagem, edite o array `pokedevs` localizado em **`src
 | `descricao`| `String` | Sim | Descrição do arquétipo. |
 | `habilidades`| `Array` | Sim | Lista de tecnologias/habilidades. |
 | `imagem` | `String` | Sim | Caminho relativo para a imagem. |
+
+---
+
+## 8. Licença
+
+Este projeto é distribuído sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+---
+
+## 9. Autor
+
+Feito com ❤️ por **DomisDev**.
+
+- **GitHub:** [@Domisnnet](https://github.com/Domisnnet)

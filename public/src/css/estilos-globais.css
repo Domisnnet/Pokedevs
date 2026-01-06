@@ -84,6 +84,11 @@ main {
     75% { transform: translate(0px, 30px); } 
 }
 
+@keyframes bounce {
+    from { transform: translateY(0); }
+    to { transform: translateY(-7px); }
+}
+
 .pula-pirueta {
     animation: pirueta 0.8s ease-in-out!important;
 }
@@ -99,12 +104,13 @@ main {
 
 .cartao-pokedev {
     display: none;
-    max-width: 280px;
+    max-width: 300px;
     box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.9);
     background-color: var(--type-color);
     backdrop-filter: blur(10px);
     border-top-left-radius: 30px;
     border-bottom-right-radius: 30px;
+    overflow: hidden;
 }
 
 .cartao-pokedev.aberto { 
@@ -129,13 +135,18 @@ main {
     align-items: center;
 }
 
-.cartao-pokedev .detalhes span { /* easter egg */
-    cursor: help;
-    transition: transform 0.2s;
+.cartao-pokedev .detalhes span {  /* Easter Egg */
+    display: inline-block; 
+    transition: transform 0.1s ease, color 0.1s ease;
+    user-select: none; 
+    cursor: help; 
 }
 
 .cartao-pokedev .detalhes span:hover {
     transform: scale(1.2);
+    color: #fff; 
+    text-shadow: 0 0 5px #fff, 0 0 10px #fcc719, 0 0 15px #fcc719;
+    -webkit-text-stroke: 0.5px rgba(0,0,0,0.5);
 }
 
 .cartao-pokedev .tipo {
@@ -149,24 +160,47 @@ main {
 
 .cartao-pokedev .cartao-informacoes {
     background-color: #ffffff;
-    padding: 80px 30px 50px;
-    margin-top: -70px;
-    border-bottom-right-radius: 30px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    gap: 20px;
+    padding: 80px 30px 40px;
+    margin-top: -70px;
+    height: 270px; 
+    overflow-y: auto;
 }
 
 .cartao-pokedev .cartao-informacoes h3 {
     font-size: 19px;
-    margin-bottom: 18px;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
     border-bottom: 1px solid #6b727a;
 }
 
 .cartao-pokedev .descricao {
-    max-height: 160px;
-    overflow-y: scroll;
     font-size: 15px;
-    padding: 0 10px;
+}
+
+.cartao-pokedev .habilidades ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.cartao-pokedev .habilidades li {
+    background-color: var(--type-color);
+    color: #fdfdfd;
+    padding: 6px 12px;
+    font-size: 14px;
+    border-radius: 15px;
+    opacity: 0.9;
+    transition: all 0.3s ease;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+}
+
+.cartao-pokedev .habilidades li:hover {
+    transform: scale(1.1);
+    opacity: 1;
+    color: #fff;
 }
 
 /* =========================
@@ -192,6 +226,10 @@ main {
     min-height: 70px;
     box-shadow: 7px 7px 9px rgba(0, 0, 0, 0.9);
     transition: 0.15s ease-in-out;
+}
+
+.listagem .pokedev:hover img {
+    animation: bounce 0.4s ease infinite alternate;
 }
 
 .listagem .pokedev:hover { 
@@ -222,6 +260,9 @@ main {
     }
     .cartao-pokedev { 
         max-width: 300px; 
+    }
+    .cartao-pokedev .cartao-informacoes {
+       height: 300px;
     }
     .listagem { 
         max-width: 360px; 
