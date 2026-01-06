@@ -1,3 +1,6 @@
+/* =========================
+  Dados e Configurações
+========================= */
 const pokedevs = [
   {
     id: "devchu",
@@ -63,12 +66,15 @@ const coresHex = {
   fada: "#C29791"
 };
 
+/* =========================
+  Renderização Dinâmica
+========================= */
 let allCardsHtml = "";
 let allListHtml = "";
 
 pokedevs.forEach((pokedev, index) => {
   const isFirst = index === 0;
-  
+
   allCardsHtml += `
     <article class="cartao-pokedev tipo-${pokedev.tipo} ${isFirst ? 'aberto' : ''}" id="cartao-${pokedev.id}" role="tabpanel">
       <header class="cartao-topo">
@@ -99,13 +105,16 @@ pokedevs.forEach((pokedev, index) => {
 pokedevsCardsContainer.innerHTML = allCardsHtml;
 pokedevsListContainer.innerHTML = allListHtml;
 
+/* =========================
+  Lógica de Interação
+========================= */
 const alternarEstadoAtivo = (idSelecionado) => {
   const pokedevData = pokedevs.find(p => p.id === idSelecionado);
   const corBase = coresHex[pokedevData.tipo] || "#6b727a";
 
   if (somSelecao) {
     somSelecao.currentTime = 0;
-    somSelecao.play().catch(() => {});
+    somSelecao.play().catch(() => { });
   }
 
   document.querySelector(".pokedev.ativo")?.classList.remove("ativo");
@@ -115,9 +124,28 @@ const alternarEstadoAtivo = (idSelecionado) => {
   document.getElementById(`cartao-${idSelecionado}`).classList.add("aberto");
 
   if (themeMeta) themeMeta.setAttribute("content", corBase);
-  document.documentElement.style.setProperty('--bg-global', corBase + "99");
+  document.documentElement.style.setProperty('--bg-global', corBase + "88");
 };
 
 document.querySelectorAll(".pokedev").forEach(pokedev => {
   pokedev.addEventListener("click", () => alternarEstadoAtivo(pokedev.id));
+});
+
+/* =========================
+  Easter Egg
+========================= */
+pokedevsCardsContainer.addEventListener("click", (event) => {
+  if (event.target.tagName === "SPAN" && event.target.parentElement.classList.contains("detalhes")) {
+    const cardAtivo = document.querySelector(".cartao-pokedev.aberto");
+    cardAtivo.classList.add("pula-pirueta");
+    if (somSelecao) {
+      somSelecao.currentTime = 0;
+      somSelecao.play().catch(() => { });
+    }
+    setTimeout(() => {
+      cardAtivo.classList.remove("pula-pirueta");
+      void cardAtivo.offsetWidth;               
+      cardAtivo.classList.add("pula-pirueta");
+    }, 800);
+  }
 });

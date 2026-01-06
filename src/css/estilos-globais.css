@@ -29,7 +29,6 @@ body, html {
     font-family: "Poppins", sans-serif;
     background: url(../imagens/background.png) no-repeat center center fixed;
     background-size: cover;
-    background-color: #000;
     height: 100vh;
 }
 
@@ -39,9 +38,9 @@ body::before {
     inset: 0;
     z-index: 0; 
     background-color: var(--bg-global); 
-    mix-blend-mode: color; 
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
+    mix-blend-mode: color;
+    backdrop-filter: blur(10px) saturate(150%);
+    -webkit-backdrop-filter: blur(10px) saturate(150%);
     transition: background-color 0.8s ease-in-out;
     pointer-events: none; 
 }
@@ -51,6 +50,8 @@ main {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    position: relative;
+    z-index: 1;
 }
 
 /* =========================
@@ -64,16 +65,27 @@ main {
 .tipo-fada     { --type-color: var(--color-fada); }
 
 /* =========================
-   Animação de Entrada Cartão
+   Animações
 ========================= */ 
 @keyframes entrarCartao {
     from { opacity: 0; transform: translateX(-30px); }
     to { opacity: 1; transform: translateX(0); }
 }
 
-@keyframes bounce {
-    from { transform: translateY(0); }
-    to { transform: translateY(-5px); }
+@keyframes pirueta {
+    from { transform: rotateY(0deg); }
+    to { transform: rotateY(360deg); }
+}
+
+@keyframes slide { 
+    0%, 100% { transform: translate(0, 0); } 
+    25% { transform: translate(-25px, 0px); } 
+    50% { transform: translate(-30px, 35px); } 
+    75% { transform: translate(0px, 30px); } 
+}
+
+.pula-pirueta {
+    animation: pirueta 0.8s ease-in-out!important;
 }
 
 /* =========================
@@ -106,16 +118,6 @@ main {
     animation: slide 6s linear infinite; 
 }
 
-@keyframes slide { 
-    0%, 100% { transform: translate(0, 0); } 
-    25% { transform: translate(-25px, 0px); } 
-    50% { transform: translate(-30px, 35px); } 
-    75% { transform: translate(0px, 30px); } 
-}
-
-/* =========================
-   Seção Interna do Cartão
-========================= */ 
 .cartao-pokedev .cartao-topo {
     padding: 30px 40px 0;
 }
@@ -125,6 +127,15 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.cartao-pokedev .detalhes span { /* easter egg */
+    cursor: help;
+    transition: transform 0.2s;
+}
+
+.cartao-pokedev .detalhes span:hover {
+    transform: scale(1.2);
 }
 
 .cartao-pokedev .tipo {
@@ -189,17 +200,11 @@ main {
 
 .listagem .pokedev.ativo {
     background-color: var(--color-active);
-    box-shadow: 0 0 20px var(--color-active);
-    transition: all 0.3s ease;
 }
 
 .listagem .pokedev img { 
     width: 42%; 
     padding-left: 15px; 
-}
-
-.listagem .pokedev:hover img {
-    animation: bounce 0.5s ease infinite alternate;
 }
 
 .listagem .pokedev span { 
