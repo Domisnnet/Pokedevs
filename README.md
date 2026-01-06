@@ -87,7 +87,7 @@ Deseja adicionar um novo Pokedev? Siga o fluxo abaixo:
 | :---: | :--- | :--- |
 | **01** | **Fork** | [![Fork](https://img.shields.io/badge/-Fazer%20Fork-blue?style=flat-square&logo=github)](https://github.com/Domisnnet/Pokedevs/fork) |
 | **02** | **Branch** | `git checkout -b feat/novo-pokedev` |
-| **03** | **Commit** | `git commit -m 'feat: adiciona pokedev de backend'` |
+| **03** | **Commit** | `git commit -m '''feat: adiciona pokedev de backend'''` |
 | **04** | **Push** | `git push origin feat/novo-pokedev` |
 | **05** | **PR** | [![Abrir PR](https://img.shields.io/badge/-Abrir%20PR-green?style=flat-square&logo=git)](https://github.com/Domisnnet/Pokedevs/compare) |
 
@@ -147,3 +147,36 @@ Este projeto está licenciado sob a [![Licença MIT](https://img.shields.io/badg
 <h2 id="perfil-do-github">12. 👨‍💻 Perfil do GitHub</h2>
 
 <a href="https://github.com/Domisnnet"> <img src="src/imagens/DomisDev.png" width="120" alt="Acessar perfil GitHub"> </a>
+
+---
+
+<h2 id="deploy-firebase">13. 🚀 Como faço o deploy deste projeto no Firebase?</h2>
+
+Para garantir que o deploy seja feito no projeto correto do Firebase, é crucial que seu ambiente local esteja configurado adequadamente.
+
+### Passo a Passo
+
+1.  **Crie o arquivo de configuração do Firebase:**
+    Na raiz do seu projeto, crie um arquivo chamado `.firebaserc`.
+
+2.  **Configure o projeto padrão:**
+    Adicione o seguinte conteúdo ao arquivo `.firebaserc`. Este código conecta seu projeto local ao projeto Firebase correto.
+
+    ```json
+    {
+      "projects": {
+        "default": "pokedevs-01319317-5da45"
+      }
+    }
+    ```
+
+3.  **Faça o Deploy:**
+    Com o arquivo `.firebaserc` criado e o `firebase.json` configurado para usar o diretório `public`, você pode fazer o deploy com o seguinte comando:
+
+    ```bash
+    firebase deploy --only hosting
+    ```
+
+Este processo garante que todas as suas atualizações sejam enviadas para o site que está no ar.
+
+---
