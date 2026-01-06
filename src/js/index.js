@@ -115,7 +115,7 @@ const alternarEstadoAtivo = (idSelecionado) => {
   document.getElementById(`cartao-${idSelecionado}`).classList.add("aberto");
 
   if (themeMeta) themeMeta.setAttribute("content", corBase);
-  document.documentElement.style.setProperty('--bg-global', corBase + "44");
+  document.documentElement.style.setProperty('--bg-global', corBase + "99");
 };
 
 document.querySelectorAll(".pokedev").forEach(pokedev => {

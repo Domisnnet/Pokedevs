@@ -29,6 +29,7 @@ body, html {
     font-family: "Poppins", sans-serif;
     background: url(../imagens/background.png) no-repeat center center fixed;
     background-size: cover;
+    background-color: #000;
     height: 100vh;
 }
 
@@ -36,11 +37,13 @@ body::before {
     content: ""; 
     position: fixed;
     inset: 0;
-    z-index: -1; 
+    z-index: 0; 
     background-color: var(--bg-global); 
-    backdrop-filter: blur(15px); 
-    -webkit-backdrop-filter: blur(15px);
-    transition: background-color 0.8s cubic-bezier(0.4, 0, 0.2, 1); 
+    mix-blend-mode: color; 
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    transition: background-color 0.8s ease-in-out;
+    pointer-events: none; 
 }
 
 main {
@@ -66,6 +69,11 @@ main {
 @keyframes entrarCartao {
     from { opacity: 0; transform: translateX(-30px); }
     to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes bounce {
+    from { transform: translateY(0); }
+    to { transform: translateY(-5px); }
 }
 
 /* =========================
@@ -181,11 +189,17 @@ main {
 
 .listagem .pokedev.ativo {
     background-color: var(--color-active);
+    box-shadow: 0 0 20px var(--color-active);
+    transition: all 0.3s ease;
 }
 
 .listagem .pokedev img { 
     width: 42%; 
     padding-left: 15px; 
+}
+
+.listagem .pokedev:hover img {
+    animation: bounce 0.5s ease infinite alternate;
 }
 
 .listagem .pokedev span { 
