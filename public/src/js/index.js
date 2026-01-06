@@ -8,7 +8,8 @@ const pokedevs = [
     numero: "#001",
     tipo: "eletrico",
     imagem: "src/imagens/devchu.png",
-    descricao: "Quando se depara com um erro no código, fica bastante irritado. Sente a tensão acumulada em cada músculo, como se estivesse prestes a soltar raios pelos dedos. Mas, em vez de se deixar abater, canaliza toda essa energia em busca da solução. Cada linha de código é examinada e ele não descansa até que o erro seja encontrado e corrigido."
+    descricao: "Quando se depara com um erro no código, fica bastante irritado. Sente a tensão acumulada em cada músculo, como se estivesse prestes a soltar raios pelos dedos. Mas, em vez de se deixar abater, canaliza toda essa energia em busca da solução. Cada linha de código é examinada e ele não descansa até que o erro seja encontrado e corrigido.",
+    habilidades: []
   },
   {
     id: "scriptle",
@@ -16,7 +17,8 @@ const pokedevs = [
     numero: "#002",
     tipo: "agua",
     imagem: "src/imagens/scriptle.png",
-    descricao: "Mesmo sendo um programador iniciante, este pokedev já domina habilidades fundamentais em Javascript como: Depurar o código, Manipulação do DOM, Trabalhar com APIs, Conhecimento de frameworks e bibliotecas tornando o código mais eficiente."
+    descricao: "Mesmo sendo um programador iniciante, este pokedev já domina habilidades fundamentais em Javascript como: Depurar o código, Manipulação do DOM, Trabalhar com APIs, Conhecimento de frameworks e bibliotecas tornando o código mais eficiente.",
+    habilidades: []
   },
   {
     id: "codevee",
@@ -24,7 +26,8 @@ const pokedevs = [
     numero: "#003",
     tipo: "fogo",
     imagem: "src/imagens/codevee.png",
-    descricao: "Sua capacidade de evoluir continuamente permite que ele se adapte de forma eficaz a qualquer ambiente de desenvolvimento. Isso reflete a flexibilidade e a capacidade de aprendizado contínuo que são essenciais para um desenvolvedor pleno."
+    descricao: "Sua capacidade de evoluir continuamente permite que ele se adapte de forma eficaz a qualquer ambiente de desenvolvimento. Isso reflete a flexibilidade e a capacidade de aprendizado contínuo que são essenciais para um desenvolvedor pleno.",
+    habilidades: []
   },
   {
     id: "psycoder",
@@ -32,7 +35,8 @@ const pokedevs = [
     numero: "#022",
     tipo: "agua",
     imagem: "src/imagens/psycoder.png",
-    descricao: "Um pokedev sênior constantemente atormentado por uma dor de cabeça persistente. Quando a dor se torna intensa demais, consegue acessar habilidades de programação extraordinárias, resolvendo problemas complexos com uma facilidade surpreendente."
+    descricao: "Um pokedev sênior constantemente atormentado por uma dor de cabeça persistente. Quando a dor se torna intensa demais, consegue acessar habilidades de programação extraordinárias, resolvendo problemas complexos com uma facilidade surpreendente.",
+    habilidades: []
   },
   {
     id: "charmandev",
@@ -40,7 +44,8 @@ const pokedevs = [
     numero: "#015",
     tipo: "fogo",
     imagem: "src/imagens/charmandev.png",
-    descricao: "Este pokedev nunca deixa a chama do aprendizado se apagar! Está sempre se atualizando, pois sabe que um bom desenvolvedor deve ser resiliente e adaptável às mudanças constantes no mundo da tecnologia. Estar aberto a aprender novas ferramentas e metodologias é crucial."
+    descricao: "Este pokedev nunca deixa a chama do aprendizado se apagar! Está sempre se atualizando, pois sabe que um bom desenvolvedor deve ser resiliente e adaptável às mudanças constantes no mundo da tecnologia. Estar aberto a aprender novas ferramentas e metodologias é crucial.",
+    habilidades: []
   },
   {
     id: "devlypuff",
@@ -48,7 +53,8 @@ const pokedevs = [
     numero: "#062",
     tipo: "fada",
     imagem: "src/imagens/devlypuff.png",
-    descricao: "A expressão '''trabalhe enquanto eles dormem''' poderia ter sido facilmente criada por este pokedev. Afinal, ele tem o dom de codar por horas e horas, madrugada adentro, regado a muito café e energéticos. Sua dedicação é tão intensa que, enquanto a maioria das pessoas está descansando, ele está imerso em linhas de código."
+    descricao: "A expressão \'\'\'trabalhe enquanto eles dormem\'\'\' poderia ter sido facilmente criada por este pokedev. Afinal, ele tem o dom de codar por horas e horas, madrugada adentro, regado a muito café e energéticos. Sua dedicação é tão intensa que, enquanto a maioria das pessoas está descansando, ele está imerso em linhas de código.",
+    habilidades: []
   }
 ];
 
