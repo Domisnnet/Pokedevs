@@ -4,7 +4,7 @@
 ![Tecnologias](https://img.shields.io/badge/Tecnologias-HTML5%20%7C%20CSS3%20%7C%20JS-blue)
 [![Licença MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/Domisnnet/pokedevs/blob/main/LICENSE)
 
-![Pokedevs](src/imagens/pokedev.png)
+![Pokedevs](src/imagens/pokedevs.png)
 
 Bem-vindo ao **Pokedevs**! Um projeto interativo que transforma arquétipos de desenvolvedores em personagens inspirados no universo Pokémon. Desenvolvido durante a "Semana do Zero ao Programador Contratado", este projeto foca em lógica de programação e manipulação de DOM para criar uma experiência imersiva.
 
@@ -36,7 +36,7 @@ Bem-vindo ao **Pokedevs**! Um projeto interativo que transforma arquétipos de d
 Clique no botão abaixo para capturar todos os Pokedevs diretamente no seu navegador:
 
 <div align="left">
-  <a href="https://domisnnet.github.io/pokedevs/" target="_blank">
+  <a href="https://domisnnet.github.io/Pokedevs/" target="_blank">
     <img alt="Botão Acessar" src="src/imagens/botão.webp" height="70" width="70" />
   </a>
 </div>
@@ -74,11 +74,11 @@ Deseja adicionar um novo Pokedev? Siga o fluxo abaixo:
 
 | Fase | Ação | Link / Comando |
 | :---: | :--- | :--- |
-| **01** | **Fork** | [![Fork](https://img.shields.io/badge/-Fazer%20Fork-blue?style=flat-square&logo=github)](https://github.com/Domisnnet/pokedevs/fork) |
+| **01** | **Fork** | [![Fork](https://img.shields.io/badge/-Fazer%20Fork-blue?style=flat-square&logo=github)](https://github.com/Domisnnet/Pokedevs/fork) |
 | **02** | **Branch** | `git checkout -b feat/novo-pokedev` |
 | **03** | **Commit** | `git commit -m 'feat: adiciona pokedev de backend'` |
 | **04** | **Push** | `git push origin feat/novo-pokedev` |
-| **05** | **PR** | [![Abrir PR](https://img.shields.io/badge/-Abrir%20PR-green?style=flat-square&logo=git)](https://github.com/Domisnnet/pokedevs/compare) |
+| **05** | **PR** | [![Abrir PR](https://img.shields.io/badge/-Abrir%20PR-green?style=flat-square&logo=git)](https://github.com/Domisnnet/Pokedevs/compare) |
 
 ---
 
