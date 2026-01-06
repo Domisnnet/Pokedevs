@@ -102,7 +102,7 @@ Deseja adicionar um novo Pokedev? Siga o fluxo abaixo:
 
 <details>
 <summary><strong>Posso usar este código em meus estudos ❓</strong></summary>
-<p>🤝 <strong>Resposta:</strong> Com certeza! O projeto é <strong>Open Source</strong> sob a licença MIT. Sinta-se à vontade para clonar e estudar o projeto, inclusive a lógica de troca de classes do JavaScript, só não se esqueça de dar os devidos Créditos!.</p>
+<p>🤝 <strong>Resposta:</strong> Com certeza! O projeto é <strong>Open Source</strong> sob a licença MIT. Sinta-se à vontade para clonar e estudar o projeto, inclusive a lógica de troca de classes do JavaScript, só não se esqueça de dar os devidos Créditos!</p>
 </details>
 
 <details>
