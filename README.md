@@ -4,7 +4,7 @@
 ![Tecnologias](https://img.shields.io/badge/Tecnologias-HTML5%20%7C%20CSS3%20%7C%20JS-blue)
 [![Licença MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/Domisnnet/pokedevs/blob/main/LICENSE)
 
-![Pokedevs](public/src/imagens/pokedevs.png)
+![Pokedevs](src/imagens/pokedevs.png)
 
 Bem-vindo ao **Pokedevs**! Um projeto interativo que transforma arquétipos de desenvolvedores em personagens inspirados no universo Pokémon. Desenvolvido durante a "Semana do Zero ao Programador Contratado", este projeto foca em lógica de programação e manipulação de DOM para criar uma experiência imersiva.
 
@@ -37,7 +37,7 @@ Clique no botão abaixo para capturar todos os Pokedevs diretamente no seu naveg
 
 <div align="left">
   <a href="https://domisnnet.github.io/Pokedevs/" target="_blank">
-    <img alt="Botão Acessar" src="public/src/imagens/botão.webp" height="70" width="70" />
+    <img alt="Botão Acessar" src="src/imagens/botão.webp" height="70" width="70" />
   </a>
 </div>
 
@@ -146,4 +146,4 @@ Este projeto está licenciado sob a [![Licença MIT](https://img.shields.io/badg
 
 <h2 id="perfil-do-github">12. 👨‍💻 Perfil do GitHub</h2>
 
-<a href="https://github.com/Domisnnet"> <img src="public/src/imagens/DomisDev.png" width="120" alt="Acessar perfil GitHub"> </a>
+<a href="https://github.com/Domisnnet"> <img src="src/imagens/DomisDev.png" width="120" alt="Acessar perfil GitHub"> </a>
