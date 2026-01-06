@@ -143,14 +143,12 @@ Para adicionar um novo personagem, edite o array `pokedevs` localizado em **`src
 
 ---
 
-## 8. Licença
+<h2 id="licenca-blueprint">8. 📄 Licença</h2>
 
-Este projeto é distribuído sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+Este projeto está licenciado sob a [![Licença MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/Domisnnet/Pokedevs/blob/main/LICENSE)
 
 ---
 
-## 9. Autor
+<h2 id="autor-blueprint">9. 👨‍💻 Autor</h2>
 
-Feito com ❤️ por **DomisDev**.
-
-- **GitHub:** [@Domisnnet](https://github.com/Domisnnet)
+<a href="https://github.com/Domisnnet"> <img src="src/imagens/DomisDev.png" width="120" alt="Acessar perfil GitHub"> </a>
